@@ -47,7 +47,7 @@
 	<!-- About Section -->
 	<section id="landing" class="py-5">
 		<div class="container text-center">
-			<img src="./images/profile-pic.jpg" class="rounded-circle img-fluid" style="max-width: 150px;">
+			<img src="./images/profile-pic.jpg" class="rounded-circle img-fluid">
 			<h2 class="fw-bold mb-4">Pedro Jose A. Siapuatco</h2>
 			<p class="lead">I’m an aspiring <strong>Full Stack Web Developer</strong>, passionate about building dynamic and user-friendly websites. Currently, I’m working on several diverse projects that allow me to sharpen my skills in both front-end and back-end development while continuously learning new technologies.</p>
 		</div>
@@ -179,32 +179,41 @@
 
 	<section id="contact" class="text-center py-5 px-3 px-md-5 bg-contact">
 		<h3 class="fw-bold mb-4">Contact</h3>
-		<form action="">
-			<div class="mb-3" id="name">
-				<label for="name" class="form-label">Name</label>
-				<input
-				type="name"
-				class="form-control bg-white"
-				id="name"
-				placeholder="First Name, M.I, Last Name"
-				/>
+		<div class="container">
+			<div class="row align-items-start">
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<form action="">
+						<div class="mb-3" id="name">
+							<label for="name" class="form-label">Name</label>
+							<input
+							type="text"
+							class="form-control bg-white"
+							id="name"
+							placeholder="First Name, M.I, Last Name"
+							/>
+						</div>
+						<div class="mb-3" id="email">
+							<label for="email" class="form-label">Email address</label>
+							<input
+							type="email"
+							class="form-control bg-white"
+							id="email"
+							placeholder="Email"
+							/>
+						</div>
+						<div class="mb-3" id="message">
+							<label for="message" class="form-label">Message</label>
+							<textarea class="form-control bg-white" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<button type="button" class="mb-3 rounded-pill" id="button">Submit</button>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<img src="images/map.png" class="img-fluid map-image" alt="Location map">
+				</div>
 			</div>
-			<div class="mb-3" id="email">
-				<label for="email" class="form-label">Email address</label>
-				<input
-				type="email"
-				class="form-control bg-white"
-				id="email"
-				placeholder="Email"
-				/>
-			</div>
-			<div class="mb-3" id="message">
-				<label for="message" class="form-label">Message</label>
-				<textarea class="form-control bg-white" id="message" rows="6" placeholder="Message"></textarea>
-			</div>
-			<button type="button" class="mb-3 rounded-pill" id="button">Submit</button>
-		</form>
-		<div class="d-flex flex-wrap justify-content-center gap-3">
+		</div>
+		<div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
 			<a href="https://about.gitlab.com/" target="_blank" aria-label="Visit my Gitlab profile">
 				<img class="contact-sites" src="images/gitlab.png" alt="Gitlab">
 			</a>

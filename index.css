@@ -1,4 +1,4 @@
-/* Existing styles */
+/* Existing styles from your previous input */
 h1, h2, h3, h5 {
     font-family: Arvo, serif;
     font-weight: bolder;
@@ -107,6 +107,12 @@ nav, p, label, input::placeholder {
 
 .navbar-navy .nav-link {
     color: white !important;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* Mobile-specific styles for small screens (≤576px) */
@@ -237,5 +243,10 @@ nav, p, label, input::placeholder {
     .contact-sites {
         width: 40px;
         height: 40px;
+    }
+
+    .map-image {
+        max-width: 100%;
+        margin-top: 1.5rem;
     }
 }
